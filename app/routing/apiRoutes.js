@@ -14,37 +14,44 @@ module.exports = function (app) {
     //post route for incoming survey results and compatibility logic
 
     app.post("/api/friends", function (req, res) {
-console.log("hello",req.body)
+        console.log("hello", req.body)
+
+
         //placeholder variable & object
-        var totalDifference = 1000
+        var friendScore = req.body.scores;
+        var scores = [];
+        var bestFriend = 0;
 
 
-        var matchName = ""
-        var matchImg = ""
+      
 
 
         //users scores for comparison to friends
-        var userInput = req.body;
-        var userScores = userInput.scores
+      
 
 
 
         for (var j = 0; j < friends.length; j++) {
             var difference = 0
 
-            for (var k = 0; k < userScores.length; k++) {
-                difference += Math.abs(friends[j], scores[k] - userScores[k]);
+            for (var k = 0; k < friendScore.length; k++) {
+                difference += Math.abs(friends[j].scores[k] - friendScore[k]);
             }
+            scores.push(difference)
 
-            if (difference < totalDifference) {
-                totalDifference = difference;
-                bestMatch.name = friends[j].name
-                matchImage = friends[j].photo
-            }
+            for(var l = 0; l < scores.length; l++)
+            if(scores[l]  <= scores[bestFriend]){
+                bestFriend = l;
+            };
+
+            
         }
 
 
-
+        var bestie = friends[bestFriend];
+        res.json(bestie);
+        friends.push(req.body)
+        console.log("ARRRRGHHH", bestie,"GRRRRRRR")
 
 
 
@@ -52,5 +59,5 @@ console.log("hello",req.body)
     })
 
 
-    
+
 };
