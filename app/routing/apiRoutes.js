@@ -14,7 +14,7 @@ module.exports = function (app) {
     //post route for incoming survey results and compatibility logic
 
     app.post("/api/friends", function (req, res) {
-
+console.log("hello",req.body)
         //placeholder variable & object
         var totalDifference = 1000
 
