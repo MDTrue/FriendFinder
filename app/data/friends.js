@@ -3,8 +3,8 @@
 var friends = [
 
 {
-    name:"Ahmed",
-    photo:"https://i.pinimg.com/originals/66/05/ee/6605ee8acda82e7d04792aff7c7a6b3c.jpg" ,
+    name:"Colonel Mustard",
+    photo:"https://github.com/MDTrue/FriendFinder/blob/master/app/data/images/MissScarlet.jpg?raw=true" ,
     scores:[
         5,
         1,
@@ -15,21 +15,47 @@ var friends = [
         2,
         5,
         4,
-        1
-      ]
+        1]
+      
   },{
-	"name" : "Monica",
-	"photo" : "https://i.pinimg.com/originals/66/05/ee/6605ee8acda82e7d04792aff7c7a6b3c.jpg" ,
+	"name" : "Miss Scarlett",
+	"photo" : "https://github.com/MDTrue/FriendFinder/blob/master/app/data/images/MissScarlet.jpg?raw=true" ,
 	"scores" : [5,5,2,3,1,5,2,1,3,5]
 }, {
-	"name" : "Simon",
-	"photo" : "https://i.pinimg.com/originals/66/05/ee/6605ee8acda82e7d04792aff7c7a6b3c.jpg" ,
+	"name" : "Professor Plum",
+	"photo" : "https://github.com/MDTrue/FriendFinder/blob/master/app/data/images/MissScarlet.jpg?raw=true" ,
 	"scores" : [1,5,1,1,1,1,1,1,5,5]
 }, {
-	"name" : "Rhea",
-	"photo" : "https://i.pinimg.com/originals/66/05/ee/6605ee8acda82e7d04792aff7c7a6b3c.jpg" ,
+	"name" : "Reverend Green",
+	"photo" : "https://github.com/MDTrue/FriendFinder/blob/master/app/data/images/MissScarlet.jpg?raw=true" ,
 	"scores" : [5,3,2,3,2,5,1,3,3,4]
-}];
-
-
-module.exports = friends
+}, {   name:"Mrs Peacock",
+photo:"https://github.com/MDTrue/FriendFinder/blob/master/app/data/images/MissScarlet.jpg?raw=true" ,
+scores:[
+    5,
+   5,
+    4,
+    4,
+    5,
+    1,
+   5,
+    5,
+    4,
+    1]
+},
+{   name:"Mrs White",
+photo:"https://github.com/MDTrue/FriendFinder/blob/master/app/data/images/MissScarlet.jpg?raw=true" ,
+scores:[
+    1,
+    1,
+    4,
+    4,
+    2,
+    1,
+    2,
+   1,
+    4,
+    1]
+},
+]
+module.exports = friends;

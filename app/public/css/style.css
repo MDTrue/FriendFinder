@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Friend Finder</title>
-    
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Kalam|Notable|Rokkitt" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-        <style>
-        footer {
+footer {
     background-color: rgb(36, 134, 214);
     position: fixed;
     left: 0;
@@ -65,12 +52,12 @@
 .questionsContainer{
     display: flex;
     justify-content: c
-    width:100%;
+   
 
 } 
 
 body {
-    background-image: url(images/mansion.jpg);
+    background-image: url(../images/mansion.jpg);
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,30 +102,3 @@ html {
 font-family: 'Notable', sans-serif;
 font-family: 'Kalam', cursive;
 font-family: 'Rokkitt', serif; */
-
-        </style>
-</head>
-
-<body>
-    <div id="container">
-    <div class="header">
-  <h1 class="textI">find a friend in </h1><h1 class="textII">CLUE</h1>
-  <p class="subtext">Answer a few basic questions</p>
-  <hr class="my-4">
-  <p class="subtext">Find the friend with the greatest compatability</p>
-</div>
-     <div class = "buttonContainer">
-  <a class="btn btn-primary btn-lg" href="/survey" role="button">take the survey</a>
-    </div>
-  </div>
-<footer>
-<a href="/api/friends">API Friends list  |</a>
-<a href="https://github.com/MDTrue/FriendFinder">GitHub Repo</a>
-</footer>
-    <body>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="javascript/app.js"></script>
-
-    </body>
-
-</html>

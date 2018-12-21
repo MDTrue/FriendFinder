@@ -6,40 +6,127 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Friend Finder</title>
 
-	<link rel="stylesheet" href="../css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Fredericka+the+Great|Paprika" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link  href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Kalam|Notable|Rokkitt" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
+     <style>
+     body{
+         background-color: black;
+         color: white;
+     }
+     .textIIII{
+         text-align: center;
+          color: white;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 4em;
+     }
+     .textV{
+    color: white;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.3em;
+    padding: .75em;
+    text-align: center;
+     }
+    .textVI{
+         color: white;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.3em;
+    padding: .75em;
+    text-align: center;
+
+    }
+     .textVII{
+         color: pink;
+    font-family: 'Notable', sans-serif;
+    font-size: 3em;
+    padding: .75em;
+    text-align: center;
+     }
+    h4{
+               color: white;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.7em;
+    padding: .75em;
+    text-align: center;
+
+    }
+    h5{
+        color: white;
+   font-family: 'Rokkitt', serif;
+    font-size: 1.7em;
+    padding: .75em;
+    text-align: left;
+    }
+    #matchImg{
+        content-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .aboutBox{
+        display:flex;
+          color: white;
+   font-family: 'Kalam', cursive;
+    font-size: 1.7em;
+    padding: .75em;
+    text-align: center;
+      display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    footer{
+        text-align: center;
+
+    }
+    .btn{
+    background-color: rgb(36, 134, 214);
+    padding: 20px;
+    color: white;
+    font-family: 'Rokkitt', serif;
+    font-size:1.5em;
+    margin: 3em;
+}
+    
+
+}
+
+     </style>
 </head>
 
 <body>
-	<div id="container">
-		<div class="jumbotron">
-			<h1 class="display-4">Friend Finder!</h1>
-			<p class="lead">Answer a few basic questions</p>
+
+	<div id="surveyContainer">
+		<div class="surveyHeader">
+			<h1 class="textIIII">Take the survey!</h1>
+			<p class="textV">Answer a few basic questions</p>
             
-             <h5 id="matchName"></h5>
+             <h5 class = "textVII" id="matchName"></h5>
 					<img id="matchImg" src="#" alt="No Image" width=250px>
 			<hr class="my-4">
-			<p>Find the friend with the greatest compatability</p>
+			<p class="textV">Find the friend with the greatest compatability</p>
 			<!-- <a class="btn btn-primary btn-lg" href="#" role="button">take the survey</a> -->
-			<h3>About You</h3>
+            <div col-lg-12 class ="aboutBox">
+			<h3 class = "textVI">About You</h3>
 
 			<div class="input-field col s6">
-				<h5>Name (Required)</h5>
+				<h4>Name (Required)</h4>
 
 				<input type="text" class="validate" placeholder="Your Name Here" id="userName">
 			</div>
 
 			<div class="input-field col s6">
-				<h5>Link to Photo Image (Required)</h5>
+				<h4>Link to Photo Image (Required)</h4>
 
 				<input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
 			</div>
+            </div>
 		</div>
+        <div class = "questionsContainer">
 		<div class="input-field col s12">
 			<h3>Question 1</h3>
-			<h5>answer this question on a scale of 1 to 5.</h5>
+			<h5>answer this question on a scale of 1 to 5. I am fond of reading in the conservatory. </h5>
 			<select id="question1">
 				<option value="" disabled selected>Choose your option</option>
 				<option value="1">1 (Strongly Disagree)</option>
@@ -53,7 +140,7 @@
 	</div>
 	<div class="input-field col s12">
 		<h3>Question 2</h3>
-		<h5>answer this question on a scale of 1 to 5.</h5>
+		<h5>Answer this question on a scale of 1 to 5. Spanner sounds so much better than monkey wrench.</h5>
 		<select id="question2">
 			<option value="" disabled selected>Choose your option</option>
 			<option value="1">1 (Strongly Disagree)</option>
@@ -67,7 +154,7 @@
 	</div>
 	<div class="input-field col s12">
 		<h3>Question 3</h3>
-		<h5>answer this question on a scale of 1 to 5.</h5>
+		<h5>Answer this question on a scale of 1 to 5. Billiard rooms should never be next the the library, too noisy!</h5>
 		<select id="question3">
 			<option value="" disabled selected>Choose your option</option>
 			<option value="1">1 (Strongly Disagree)</option>
@@ -81,7 +168,7 @@
 	</div>
 	<div class="input-field col s12">
 		<h3>Question 4</h3>
-		<h5>answer this question on a scale of 1 to 5.</h5>
+		<h5>Answer this question on a scale of 1 to 5. I prefer dagger, lead pipe, and rope to rock, paper, and scissors.</h5>
 		<select id="question4">
 			<option value="" disabled selected>Choose your option</option>
 			<option value="1">1 (Strongly Disagree)</option>
@@ -95,7 +182,7 @@
 	</div>
 	<div class="input-field col s12">
 		<h3>Question 5</h3>
-		<h5>answer this question on a scale of 1 to 5.</h5>
+		<h5>Answer this question on a scale of 1 to 5. A house is not a home without a secret passage or two.</h5>
 		<select id="question5">
 			<option value="" disabled selected>Choose your option</option>
 			<option value="1">1 (Strongly Disagree)</option>
@@ -109,7 +196,7 @@
 	</div>
 	<div class="input-field col s12">
 		<h3>Question 6</h3>
-		<h5>answer this question on a scale of 1 to 5.</h5>
+		<h5>Answer this question on a scale of 1 to 5. Proper dining should be by candlelight.</h5>
 		<select id="question6">
 			<option value="" disabled selected>Choose your option</option>
 			<option value="1">1 (Strongly Disagree)</option>
@@ -123,7 +210,7 @@
 	</div>
 	<div class="input-field col s12">
 		<h3>Question 7</h3>
-		<h5>answer this question on a scale of 1 to 5.</h5>
+		<h5>Answer this question on a scale of 1 to 5. I find houses without any bedrooms to be quite charming.</h5>
 		<select id="question7">
 			<option value="" disabled selected>Choose your option</option>
 			<option value="1">1 (Strongly Disagree)</option>
@@ -137,7 +224,7 @@
 	</div>
 	<div class="input-field col s12">
 		<h3>Question 8</h3>
-		<h5>answer this question on a scale of 1 to 5.</h5>
+		<h5>Answer this question on a scale of 1 to 5. Suggestions should always be made in rooms, not corridors.</h5>
 		<select id="question8">
 			<option value="" disabled selected>Choose your option</option>
 			<option value="1">1 (Strongly Disagree)</option>
@@ -151,7 +238,7 @@
 	</div>
 	<div class="input-field col s12">
 		<h3>Question 9</h3>
-		<h5>answer this question on a scale of 1 to 5.</h5>
+		<h5>Answer this question on a scale of 1 to 5. I keep my envelopes in the cellar.</h5>
 		<select id="question9">
 			<option value="" disabled selected>Choose your option</option>
 			<option value="1">1 (Strongly Disagree)</option>
@@ -165,7 +252,7 @@
 	</div>
 	<div class="input-field col s12">
 		<h3>Question 10</h3>
-		<h5>answer this question on a scale of 1 to 5.</h5>
+		<h5>Answer this question on a scale of 1 to 5. Board games make me bored.</h5>
 		<select id="question10">
 			<option value="" disabled selected>Choose your option</option>
 			<option value="1">1 (Strongly Disagree)</option>
@@ -206,7 +293,7 @@
 			</div>
 		</div>
 	</div>
-
+</div>
 
 	<footer>
 		<a href="api/friends">API Friends list |</a>
