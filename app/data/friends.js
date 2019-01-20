@@ -4,7 +4,7 @@ var friends = [
 
 {
     name:"Colonel Mustard",
-    photo:"https://github.com/MDTrue/FriendFinder/blob/master/app/data/images/MissScarlet.jpg?raw=true" ,
+    photo:"https://raw.githubusercontent.com/MDTrue/FriendFinder/master/app/public/images/ColonelMustard.jpg" ,
     scores:[
         5,
         1,
@@ -19,18 +19,18 @@ var friends = [
       
   },{
 	"name" : "Miss Scarlett",
-	"photo" : "https://github.com/MDTrue/FriendFinder/blob/master/app/data/images/MissScarlet.jpg?raw=true" ,
+	"photo" : "https://raw.githubusercontent.com/MDTrue/FriendFinder/master/app/public/images/MissScarlet.jpg" ,
 	"scores" : [5,5,2,3,1,5,2,1,3,5]
 }, {
 	"name" : "Professor Plum",
-	"photo" : "https://github.com/MDTrue/FriendFinder/blob/master/app/data/images/MissScarlet.jpg?raw=true" ,
+	"photo" : "https://raw.githubusercontent.com/MDTrue/FriendFinder/master/app/public/images/ProfessorPlum.jpg" ,
 	"scores" : [1,5,1,1,1,1,1,1,5,5]
 }, {
 	"name" : "Reverend Green",
-	"photo" : "https://github.com/MDTrue/FriendFinder/blob/master/app/data/images/MissScarlet.jpg?raw=true" ,
+	"photo" : "https://raw.githubusercontent.com/MDTrue/FriendFinder/master/app/public/images/ReverendGreen.jpg" ,
 	"scores" : [5,3,2,3,2,5,1,3,3,4]
 }, {   name:"Mrs Peacock",
-photo:"https://github.com/MDTrue/FriendFinder/blob/master/app/data/images/MissScarlet.jpg?raw=true" ,
+photo:"https://raw.githubusercontent.com/MDTrue/FriendFinder/master/app/public/images/MrsPeacock.jpg" ,
 scores:[
     5,
    5,
@@ -44,7 +44,7 @@ scores:[
     1]
 },
 {   name:"Mrs White",
-photo:"https://github.com/MDTrue/FriendFinder/blob/master/app/data/images/MissScarlet.jpg?raw=true" ,
+photo:"https://raw.githubusercontent.com/MDTrue/FriendFinder/master/app/public/images/MrsWhite.jpg" ,
 scores:[
     1,
     1,

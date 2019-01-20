@@ -23,11 +23,11 @@ module.exports = function (app) {
         var bestFriend = 0;
 
 
-      
+
 
 
         //users scores for comparison to friends
-      
+
 
 
 
@@ -39,19 +39,19 @@ module.exports = function (app) {
             }
             scores.push(difference)
 
-            for(var l = 0; l < scores.length; l++)
-            if(scores[l]  <= scores[bestFriend]){
-                bestFriend = l;
-            };
+            for (var l = 0; l < scores.length; l++)
+                if (scores[l] <= scores[bestFriend]) {
+                    bestFriend = l;
+                };
 
-            
+
         }
 
 
         var bestie = friends[bestFriend];
         res.json(bestie);
         friends.push(req.body)
-        console.log("ARRRRGHHH", bestie,"GRRRRRRR")
+        console.log("ARRRRGHHH", bestie, "GRRRRRRR")
 
 
 

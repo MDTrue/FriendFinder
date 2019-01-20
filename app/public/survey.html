@@ -6,338 +6,272 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Friend Finder</title>
 
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
-	<link  href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Kalam|Notable|Rokkitt" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Kalam|Notable|Rokkitt" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
-     <style>
-     body{
-         background-color: black;
-         color: white;
-     }
-     .textIIII{
-         text-align: center;
-          color: white;
-    font-family: 'Black Han Sans', sans-serif;
-    font-size: 4em;
-     }
-     .textV{
-    color: white;
-    font-family: 'Black Han Sans', sans-serif;
-    font-size: 1.3em;
-    padding: .75em;
-    text-align: center;
-     }
-    .textVI{
-         color: white;
-    font-family: 'Black Han Sans', sans-serif;
-    font-size: 1.3em;
-    padding: .75em;
-    text-align: center;
 
-    }
-     .textVII{
-         color: pink;
-    font-family: 'Notable', sans-serif;
-    font-size: 3em;
-    padding: .75em;
-    text-align: center;
-     }
-    h4{
-               color: white;
-    font-family: 'Black Han Sans', sans-serif;
-    font-size: 1.7em;
-    padding: .75em;
-    text-align: center;
-
-    }
-    h5{
-        color: white;
-   font-family: 'Rokkitt', serif;
-    font-size: 1.7em;
-    padding: .75em;
-    text-align: left;
-    }
-    #matchImg{
-        content-align: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .aboutBox{
-        display:flex;
-          color: white;
-   font-family: 'Kalam', cursive;
-    font-size: 1.7em;
-    padding: .75em;
-    text-align: center;
-      display: block;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-    footer{
-        text-align: center;
-
-    }
-    .btn{
-    background-color: rgb(36, 134, 214);
-    padding: 20px;
-    color: white;
-    font-family: 'Rokkitt', serif;
-    font-size:1.5em;
-    margin: 3em;
-}
-    
-
-}
-
-     </style>
 </head>
 
 <body>
 
 	<div id="surveyContainer">
 		<div class="surveyHeader">
-			<h1 class="textIIII">Take the survey!</h1>
 			<p class="textV">Answer a few basic questions</p>
-            
-             <h5 class = "textVII" id="matchName"></h5>
-					<img id="matchImg" src="#" alt="No Image" width=250px>
-			<hr class="my-4">
-			<p class="textV">Find the friend with the greatest compatability</p>
-			<!-- <a class="btn btn-primary btn-lg" href="#" role="button">take the survey</a> -->
-            <div col-lg-12 class ="aboutBox">
-			<h3 class = "textVI">About You</h3>
 
-			<div class="input-field col s6">
+			<!-- <h5 class="textVII" id="matchName"></h5> -->
+			<!-- <img id="matchImg" src="#" alt="No Image" width=250px> -->
+			<!-- <hr class="my-4"> -->
+			<p class="textV">Find the friend with the greatest compatability</p>
+			<h1 class="textIIII">Take the survey!</h1>
+			<!-- <a class="btn btn-primary btn-lg" href="#" role="button">take the survey</a> -->
+		</div>
+		</br>
+		<div class="aboutBox">
+			<h3 class="textVI">About You</h3>
+
+			<div class="input-field">
 				<h4>Name (Required)</h4>
 
 				<input type="text" class="validate" placeholder="Your Name Here" id="userName">
 			</div>
 
-			<div class="input-field col s6">
+			<div class="input-field">
 				<h4>Link to Photo Image (Required)</h4>
 
 				<input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
 			</div>
-            </div>
 		</div>
-        <div class = "questionsContainer">
-		<div class="input-field col s12">
-			<h3>Question 1</h3>
-			<h5>answer this question on a scale of 1 to 5. I am fond of reading in the conservatory. </h5>
-			<select id="question1">
-				<option value="" disabled selected>Choose your option</option>
-				<option value="1">1 (Strongly Disagree)</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5 (Strongly Agree)</option>
-			</select>
+		</br>
+		<div class="questionContainer">
+			<div class="questionTextBox">
+				<text class="textV">Respond with how much you agree with the following statements on a scale from 1 to 5.</text>
+			</div>
+			<div class="Question">
+				<h3>Question 1</h3>
+				<h5> I am fond of reading in the conservatory. </h5>
+				<select id="question1">
+					<option value="" disabled selected>Choose your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+
+			<div class="Question">
+				<h3>Question 2</h3>
+				<h5>Spanner sounds so much better than monkey wrench.</h5>
+				<select id="question2">
+					<option value="" disabled selected>Choose your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+
+			<div class="Question">
+				<h3>Question 3</h3>
+				<h5>Billiard rooms should never be next the the library. Too noisy!</h5>
+				<select id="question3">
+					<option value="" disabled selected>Choose your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+
+			<div class="Question">
+				<h3>Question 4</h3>
+				<h5>I prefer dagger, lead pipe, and rope to rock, paper, and scissors.</h5>
+				<select id="question4">
+					<option value="" disabled selected>Choose your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+
+			<div class="Question">
+				<h3>Question 5</h3>
+				<h5>A house is not a home without a secret passage or two.</h5>
+				<select id="question5">
+					<option value="" disabled selected>Choose your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+
+			<div class="Question">
+				<h3>Question 6</h3>
+				<h5>Proper dining should be by candlelight.</h5>
+				<select id="question6">
+					<option value="" disabled selected>Choose your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+
+			<div class="Question">
+				<h3>Question 7</h3>
+				<h5>I find houses without any bedrooms to be quite charming.</h5>
+				<select id="question7">
+					<option value="" disabled selected>Choose your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+
+			<div class="Question">
+				<h3>Question 8</h3>
+				<h5>Suggestions should always be made in rooms, not corridors.</h5>
+				<select id="question8">
+					<option value="" disabled selected>Choose your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+
+			<div class="Question">
+				<h3>Question 9</h3>
+				<h5>I keep my envelopes in the cellar.</h5>
+				<select id="question9">
+					<option value="" disabled selected>Choose your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+
+
+			<div class="Question">
+				<h3>Question 10</h3>
+				<h5> Board games make me bored.</h5>
+				<select id="question10">
+					<option value="" disabled selected>Choose your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+			<button type="button" class="buttonSurvey" id=submitButton>
+				submit your survey
+			</button>
 		</div>
-
-	</div>
-	<div class="input-field col s12">
-		<h3>Question 2</h3>
-		<h5>Answer this question on a scale of 1 to 5. Spanner sounds so much better than monkey wrench.</h5>
-		<select id="question2">
-			<option value="" disabled selected>Choose your option</option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
+		<footer>
+			<a href="api/friends">API Friends list |</a>
+			<a href="https://github.com/MDTrue/FriendFinder">GitHub Repo</a>
+		</footer>
+		<!-- Button trigger modal -->
 	</div>
 
-	</div>
-	<div class="input-field col s12">
-		<h3>Question 3</h3>
-		<h5>Answer this question on a scale of 1 to 5. Billiard rooms should never be next the the library, too noisy!</h5>
-		<select id="question3">
-			<option value="" disabled selected>Choose your option</option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
-	</div>
 
-	</div>
-	<div class="input-field col s12">
-		<h3>Question 4</h3>
-		<h5>Answer this question on a scale of 1 to 5. I prefer dagger, lead pipe, and rope to rock, paper, and scissors.</h5>
-		<select id="question4">
-			<option value="" disabled selected>Choose your option</option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
-	</div>
 
-	</div>
-	<div class="input-field col s12">
-		<h3>Question 5</h3>
-		<h5>Answer this question on a scale of 1 to 5. A house is not a home without a secret passage or two.</h5>
-		<select id="question5">
-			<option value="" disabled selected>Choose your option</option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
-	</div>
-
-	</div>
-	<div class="input-field col s12">
-		<h3>Question 6</h3>
-		<h5>Answer this question on a scale of 1 to 5. Proper dining should be by candlelight.</h5>
-		<select id="question6">
-			<option value="" disabled selected>Choose your option</option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
-	</div>
-
-	</div>
-	<div class="input-field col s12">
-		<h3>Question 7</h3>
-		<h5>Answer this question on a scale of 1 to 5. I find houses without any bedrooms to be quite charming.</h5>
-		<select id="question7">
-			<option value="" disabled selected>Choose your option</option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
-	</div>
-
-	</div>
-	<div class="input-field col s12">
-		<h3>Question 8</h3>
-		<h5>Answer this question on a scale of 1 to 5. Suggestions should always be made in rooms, not corridors.</h5>
-		<select id="question8">
-			<option value="" disabled selected>Choose your option</option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
-	</div>
-
-	</div>
-	<div class="input-field col s12">
-		<h3>Question 9</h3>
-		<h5>Answer this question on a scale of 1 to 5. I keep my envelopes in the cellar.</h5>
-		<select id="question9">
-			<option value="" disabled selected>Choose your option</option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
-	</div>
-
-	</div>
-	<div class="input-field col s12">
-		<h3>Question 10</h3>
-		<h5>Answer this question on a scale of 1 to 5. Board games make me bored.</h5>
-		<select id="question10">
-			<option value="" disabled selected>Choose your option</option>
-			<option value="1">1 (Strongly Disagree)</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5 (Strongly Agree)</option>
-		</select>
-	</div>
-   
-
-	</div>
-	<!-- Button trigger modal -->
-	<button type="button" class="btn btn-primary" id=submitButton data-toggle="modal" data-target="#exampleModalCenter">
-		submit your survey
-	</button>
 
 	<!-- Modal -->
-	<div id="resultModal" class="modal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-	 aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalCenterTitle">Here is your new friend!</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<h5 id="matchName"></h5>
-					<img id="matchImg" src="#" alt="No Image" width=250px>
-					...
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-				</div>
+	<div id="resultModal" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<text class="modalHeader">I have a CLUE</text>
+				<span class="close">&times;</span>
+			</div>
+			<div class="modal-body">
+					<h5 class="textVII" id="matchName"></h5>
+				<img id="matchImg" src="#" alt="No Image" width=300px>
+			</div>
+			<div class="modal-footer">
+				<text class="modalHeader">could be your new best friend!</text>
 			</div>
 		</div>
+
 	</div>
-</div>
-
-	<footer>
-		<a href="api/friends">API Friends list |</a>
-		<a href="https://github.com/MDTrue/FriendFinder">GitHub Repo</a>
-	</footer>
-
-	<body>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function () {
-				$("#submitButton").on("click", function (event) {
-                    event.preventDefault();
-                    
 
 
-					var userInput = {
-						name: $("#userName").val().trim(),
-						photo: $("#userPhoto").val().trim(),
-						scores: [
-							parseInt($("#question1").val().trim()),
-                            parseInt($("#question2").val().trim()),
-                            parseInt($("#question3").val().trim()),
-                            parseInt($("#question4").val().trim()),
-                            parseInt($("#question5").val().trim()),
-                            parseInt($("#question6").val().trim()),
-                            parseInt($("#question7").val().trim()),
-                            parseInt($("#question8").val().trim()),
-                            parseInt($("#question9").val().trim()),
-                            parseInt($("#question10").val().trim()),
-						]
-					};
-var currentURL = window.location.origin;
-					console.log(userInput)
-                    
-					$.post( currentURL + "/api/friends", userInput, function (data) {
-						$("#matchName").text(data.name);
-						$("#matchImg").attr("src", data.photo);
-						$('#resultModal').modal('show');
-                    })
-                    //  $(".modal").modal();
-				});
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var modal = document.getElementById("resultModal");
+			var btn = document.getElementById("submitButton");
+			var span = document.getElementsByClassName("close")[0];
+			$("#submitButton").on("click", function (event) {
+
+				event.preventDefault();
+
+				modal.style.display = "block";
+
+
+
+				var userInput = {
+					name: $("#userName").val().trim(),
+					photo: $("#userPhoto").val().trim(),
+					scores: [
+						parseInt($("#question1").val().trim()),
+						parseInt($("#question2").val().trim()),
+						parseInt($("#question3").val().trim()),
+						parseInt($("#question4").val().trim()),
+						parseInt($("#question5").val().trim()),
+						parseInt($("#question6").val().trim()),
+						parseInt($("#question7").val().trim()),
+						parseInt($("#question8").val().trim()),
+						parseInt($("#question9").val().trim()),
+						parseInt($("#question10").val().trim()),
+					]
+				};
+				var currentURL = window.location.origin;
+				console.log(userInput)
+
+				$.post(currentURL + "/api/friends", userInput, function (data) {
+					$("#matchName").text(data.name);
+					$("#matchImg").attr("src", data.photo);
+					// $('#resultModal').modal('show');
+				})
+				//  $(".modal").modal();
 			});
-		</script>
+			span.onclick = function () {
+				modal.style.display = "none";
+			}
+			window.onclick = function (event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
 
-	</body>
+		});
+	</script>
+
+</body>
 
 </html>

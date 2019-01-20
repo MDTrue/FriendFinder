@@ -1,11 +1,12 @@
 {
   "name": "FriendFinder",
   "version": "1.0.0",
-  "description": "",
+  "description": "======= https://mdtrue.github.io/TriviaGame2/ ## clue themed dating app of course challenging use of call and response with path, express and body-parser",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "sass": "node-sass app/public/assets/sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "node-sass": "^4.11.0",
     "path": "^0.12.7"
   },
   "devDependencies": {}
